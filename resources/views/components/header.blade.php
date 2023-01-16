@@ -1,5 +1,8 @@
 <nav>
-    <img src="" alt="">
+    <a href="{{ route('home') }}">
+        <img src="{{ asset('images/dc-logo.png') }}" alt="">
+    </a>
+    
     <ul>
         <li>
             <a href="{{ route('home') }}">Home</a>
