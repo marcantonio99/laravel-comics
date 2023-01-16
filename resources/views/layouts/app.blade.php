@@ -10,5 +10,8 @@
     <header>
         @include('components.header')
     </header>
+    <main>
+        @yield('main-content')
+    </main>
 </body>
 </html>

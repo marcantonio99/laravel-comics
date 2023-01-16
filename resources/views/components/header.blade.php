@@ -2,10 +2,10 @@
     <img src="" alt="">
     <ul>
         <li>
-            <a href="">Home</a>
+            <a href="{{ route('home') }}">Home</a>
         </li>
         <li>
-            <a href="">Comics</a>
+            <a href="{{ route('index.comics') }}">Comics</a>
         </li>
     </ul>
 </nav>
