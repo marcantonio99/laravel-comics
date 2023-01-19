@@ -238,3 +238,13 @@ Route::get('/comics', function () {
 
     return view('pages.comics.index', compact('comics'));
 })->name('index.comics');
+
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('comics');
+    $singolo_elemento = $comics[$id];
+    //dd($singolo_elemento);
+
+    return view('pages.comics.show', compact('singolo_elemento'));
+})->name('show.comics');
+
+
